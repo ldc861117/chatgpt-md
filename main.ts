@@ -196,6 +196,8 @@ export default class ChatGPT_MD extends Plugin {
 		}
 	}
 
+	//Internal Thoughts and Operations
+
 	addHR(editor: Editor, role: string) {
 		const newLine = `\n\n<hr class="__chatgpt_plugin">\n\n${this.getHeadingPrefix()}role::${role}\n\n`;
 		editor.replaceRange(newLine, editor.getCursor());
